@@ -87,10 +87,10 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                 echo $_POST['email'];?>">
   </p>
   <p>
-    Password: <input type="text" name="password_1"
+    Password: <input type="password" name="password_1"
       value="<?php if (isset($_POST['password_1']))
                 echo $_POST['password_1'];?>">
-    Confirm Password: <input type="text" name="password_2"
+    Confirm Password: <input type="password" name="password_2"
       value="<?php if (isset($_POST['password_2']))
                 echo $_POST['password_2'];?>">
   </p>
