@@ -7,7 +7,7 @@
 
     if($check){
       session_start();
-      $_SESSION['id'] = $data['id'];
+      $_SESSION['user_id'] = $data['id'];
       $_SESSION['first_name'] = $data['first_name'];
       $_SESSION['last_name'] = $data['last_name'];
       load('home.php');

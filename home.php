@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    This is home
-  </body>
-</html>
+<?php
+  session_start();
+  if(!isset($_SESSION['user_id'])){
+    require('login_tools');
+    load();
+  }
+  $page_title = 'Home';
+  include('includes/header.html');
+  echo "<h1>Home</h1>
+  <p>
+  You are now logged in,
+  {$_SESSION['first_name']} {$_SESSION['last_name']}
+  </p>";
+ ?>
