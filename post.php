@@ -26,4 +26,3 @@
     <a href="goodbye.php">Logout</a>
   </p>';
   include('includes/footer.html');
- ?>
