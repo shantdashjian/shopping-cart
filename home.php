@@ -11,4 +11,10 @@
   You are now logged in,
   {$_SESSION['first_name']} {$_SESSION['last_name']}
   </p>";
+  echo '<p>
+    <a href="forum.php">Forum</a> |
+    <a href="shop.php">Shop</a> |
+    <a href="goodbye.php">Logout</a>
+  </p>';
+  include('includes/footer.html');
  ?>
