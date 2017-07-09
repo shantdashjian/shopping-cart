@@ -1,7 +1,7 @@
 <?php
-  # Connect on 'localhost' for user 'site_db_user'
+  # Connect on 'localhost' for user 'shop_user'
   $dbc = mysqli_connect
-    ('localhost', 'users_user', 'users_user', 'users')
+    ('localhost', 'shop_user', 'shop_user', 'shop')
   OR die
     (mysqli_connect_error());
 
